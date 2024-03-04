@@ -2,7 +2,7 @@
 Issues when using [Detectron2/DensePose](https://github.com/facebookresearch/detectron2/tree/main/projects/DensePose) on AWS SageMaker
 
 ## Case1: using PyTorchModel by gzip
-* reference: https://sagemaker.readthedocs.io/en/v2.32.1/frameworks/pytorch/using_pytorch.html
+* reference: https://sagemaker.readthedocs.io/en/stable/frameworks/pytorch/using_pytorch.html#deploy-pytorch-models
 * result:
 
 ## PyTorchModel by Docker
