@@ -1,0 +1,209 @@
+timestamp,message
+1709537080920,"Collecting git+https://github.com/facebookresearch/detectron2.git (from -r /opt/ml/model/code/requirements.txt (line 1))
+  Cloning https://github.com/facebookresearch/detectron2.git to /home/model-server/tmp/pip-req-build-41e3bc01
+  Running command git clone --filter=blob:none --quiet https://github.com/facebookresearch/detectron2.git /home/model-server/tmp/pip-req-build-41e3bc01
+  Resolved https://github.com/facebookresearch/detectron2.git to commit 3ff5dd1cff4417af07097064813c9f28d7461d3c
+  Preparing metadata (setup.py): started"
+1709537080926,  Preparing metadata (setup.py): finished with status 'done'
+1709537086193,"Collecting git+https://github.com/facebookresearch/detectron2@main#subdirectory=projects/DensePose (from -r /opt/ml/model/code/requirements.txt (line 2))
+  Cloning https://github.com/facebookresearch/detectron2 (to revision main) to /home/model-server/tmp/pip-req-build-gptb9833
+  Running command git clone --filter=blob:none --quiet https://github.com/facebookresearch/detectron2 /home/model-server/tmp/pip-req-build-gptb9833
+  Resolved https://github.com/facebookresearch/detectron2 to commit 3ff5dd1cff4417af07097064813c9f28d7461d3c
+  Preparing metadata (setup.py): started"
+1709537086440,  Preparing metadata (setup.py): finished with status 'done'
+1709537086440,Requirement already satisfied: av in /opt/conda/lib/python3.10/site-packages (from -r /opt/ml/model/code/requirements.txt (line 3)) (11.0.0)
+1709537086440,Requirement already satisfied: sagemaker-inference in /opt/conda/lib/python3.10/site-packages (from -r /opt/ml/model/code/requirements.txt (line 4)) (1.10.1)
+1709537086440,Requirement already satisfied: Pillow>=7.1 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (10.2.0)
+1709537086440,Requirement already satisfied: matplotlib in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (3.8.2)
+1709537086440,Requirement already satisfied: pycocotools>=2.0.2 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.0.7)
+1709537086440,Requirement already satisfied: termcolor>=1.1 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.4.0)
+1709537086440,Requirement already satisfied: yacs>=0.1.8 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (0.1.8)
+1709537086440,Requirement already satisfied: tabulate in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (0.9.0)
+1709537086440,Requirement already satisfied: cloudpickle in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (3.0.0)
+1709537086441,Requirement already satisfied: tqdm>4.29.0 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (4.64.1)
+1709537086441,Requirement already satisfied: tensorboard in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.16.2)
+1709537086441,"Requirement already satisfied: fvcore<0.1.6,>=0.1.5 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (0.1.5.post20221221)"
+1709537086441,"Requirement already satisfied: iopath<0.1.10,>=0.1.7 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (0.1.9)"
+1709537086441,"Requirement already satisfied: omegaconf<2.4,>=2.1 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.3.0)"
+1709537086441,Requirement already satisfied: hydra-core>=1.1 in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (1.3.2)
+1709537086441,Requirement already satisfied: black in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (24.2.0)
+1709537086441,Requirement already satisfied: packaging in /opt/conda/lib/python3.10/site-packages (from detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (23.1)
+1709537086441,Requirement already satisfied: opencv-python-headless>=4.5.3.56 in /opt/conda/lib/python3.10/site-packages (from detectron2-densepose==0.6->-r /opt/ml/model/code/requirements.txt (line 2)) (4.9.0.80)
+1709537086441,Requirement already satisfied: scipy>=1.5.4 in /opt/conda/lib/python3.10/site-packages (from detectron2-densepose==0.6->-r /opt/ml/model/code/requirements.txt (line 2)) (1.10.1)
+1709537086441,Requirement already satisfied: boto3 in /opt/conda/lib/python3.10/site-packages (from sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (1.28.60)
+1709537086441,Requirement already satisfied: numpy in /opt/conda/lib/python3.10/site-packages (from sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (1.24.4)
+1709537086441,Requirement already satisfied: six in /opt/conda/lib/python3.10/site-packages (from sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (1.16.0)
+1709537086441,Requirement already satisfied: psutil in /opt/conda/lib/python3.10/site-packages (from sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (5.9.5)
+1709537086441,"Requirement already satisfied: retrying<1.4,>=1.3.3 in /opt/conda/lib/python3.10/site-packages (from sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (1.3.4)"
+1709537086441,"Requirement already satisfied: pyyaml>=5.1 in /opt/conda/lib/python3.10/site-packages (from fvcore<0.1.6,>=0.1.5->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (6.0)"
+1709537086441,Requirement already satisfied: antlr4-python3-runtime==4.9.* in /opt/conda/lib/python3.10/site-packages (from hydra-core>=1.1->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (4.9.3)
+1709537086441,"Requirement already satisfied: portalocker in /opt/conda/lib/python3.10/site-packages (from iopath<0.1.10,>=0.1.7->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.8.2)"
+1709537086441,Requirement already satisfied: contourpy>=1.0.1 in /opt/conda/lib/python3.10/site-packages (from matplotlib->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (1.2.0)
+1709537086441,Requirement already satisfied: cycler>=0.10 in /opt/conda/lib/python3.10/site-packages (from matplotlib->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (0.12.1)
+1709537086441,Requirement already satisfied: fonttools>=4.22.0 in /opt/conda/lib/python3.10/site-packages (from matplotlib->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (4.47.0)
+1709537086441,Requirement already satisfied: kiwisolver>=1.3.1 in /opt/conda/lib/python3.10/site-packages (from matplotlib->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (1.4.5)
+1709537086441,Requirement already satisfied: pyparsing>=2.3.1 in /opt/conda/lib/python3.10/site-packages (from matplotlib->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (3.1.1)
+1709537086691,Requirement already satisfied: python-dateutil>=2.7 in /opt/conda/lib/python3.10/site-packages (from matplotlib->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.8.2)
+1709537086691,Requirement already satisfied: click>=8.0.0 in /opt/conda/lib/python3.10/site-packages (from black->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (8.1.7)
+1709537086691,Requirement already satisfied: mypy-extensions>=0.4.3 in /opt/conda/lib/python3.10/site-packages (from black->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (1.0.0)
+1709537086691,Requirement already satisfied: pathspec>=0.9.0 in /opt/conda/lib/python3.10/site-packages (from black->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (0.12.1)
+1709537086691,Requirement already satisfied: platformdirs>=2 in /opt/conda/lib/python3.10/site-packages (from black->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (4.2.0)
+1709537086691,Requirement already satisfied: tomli>=1.1.0 in /opt/conda/lib/python3.10/site-packages (from black->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.0.1)
+1709537086691,Requirement already satisfied: typing-extensions>=4.0.1 in /opt/conda/lib/python3.10/site-packages (from black->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (4.9.0)
+1709537086691,"Requirement already satisfied: botocore<1.32.0,>=1.31.60 in /opt/conda/lib/python3.10/site-packages (from boto3->sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (1.31.85)"
+1709537086691,"Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /opt/conda/lib/python3.10/site-packages (from boto3->sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (1.0.1)"
+1709537086691,"Requirement already satisfied: s3transfer<0.8.0,>=0.7.0 in /opt/conda/lib/python3.10/site-packages (from boto3->sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (0.7.0)"
+1709537086691,Requirement already satisfied: absl-py>=0.4 in /opt/conda/lib/python3.10/site-packages (from tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.1.0)
+1709537086691,Requirement already satisfied: grpcio>=1.48.2 in /opt/conda/lib/python3.10/site-packages (from tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (1.62.0)
+1709537086691,Requirement already satisfied: markdown>=2.6.8 in /opt/conda/lib/python3.10/site-packages (from tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (3.5.2)
+1709537086691,"Requirement already satisfied: protobuf!=4.24.0,>=3.19.6 in /opt/conda/lib/python3.10/site-packages (from tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (4.25.3)"
+1709537086691,Requirement already satisfied: setuptools>=41.0.0 in /opt/conda/lib/python3.10/site-packages (from tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (65.6.3)
+1709537086691,"Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /opt/conda/lib/python3.10/site-packages (from tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (0.7.2)"
+1709537086691,Requirement already satisfied: werkzeug>=1.0.1 in /opt/conda/lib/python3.10/site-packages (from tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (3.0.1)
+1709537086942,"Requirement already satisfied: urllib3<2.1,>=1.25.4 in /opt/conda/lib/python3.10/site-packages (from botocore<1.32.0,>=1.31.60->boto3->sagemaker-inference->-r /opt/ml/model/code/requirements.txt (line 4)) (1.26.18)"
+1709537087192,Requirement already satisfied: MarkupSafe>=2.1.1 in /opt/conda/lib/python3.10/site-packages (from werkzeug>=1.0.1->tensorboard->detectron2==0.6->-r /opt/ml/model/code/requirements.txt (line 1)) (2.1.3)
+1709537087192,WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+1709537087192,[notice] A new release of pip is available: 23.3.2 -> 24.0
+1709537087443,"[notice] To update, run: pip install --upgrade pip"
+1709537087944,Warning: TorchServe is using non-default JVM parameters: -XX:-UseContainerSupport
+1709537088445,WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+1709537088445,"2024-03-04T07:24:48,403 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties"
+1709537088695,"2024-03-04T07:24:48,407 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager..."
+1709537088695,"2024-03-04T07:24:48,490 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml"
+1709537088695,"2024-03-04T07:24:48,629 [INFO ] main org.pytorch.serve.ModelServer - "
+1709537088695,Torchserve version: 0.8.2
+1709537088695,TS Home: /opt/conda/lib/python3.10/site-packages
+1709537088695,Current directory: /
+1709537088695,Temp directory: /home/model-server/tmp
+1709537088695,Metrics config path: /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml
+1709537088695,Number of GPUs: 1
+1709537088695,Number of CPUs: 4
+1709537088695,Max heap size: 3934 M
+1709537088695,Python executable: /opt/conda/bin/python3.10
+1709537088695,Config file: /etc/sagemaker-ts.properties
+1709537088695,Inference address: http://0.0.0.0:8080
+1709537088695,Management address: http://0.0.0.0:8080
+1709537088695,Metrics address: http://127.0.0.1:8082
+1709537088695,Model Store: /.sagemaker/ts/models
+1709537088695,Initial Models: model=/opt/ml/model
+1709537088696,Log dir: /logs
+1709537088696,Metrics dir: /logs
+1709537088696,Netty threads: 0
+1709537088696,Netty client threads: 0
+1709537088696,Default workers per model: 1
+1709537088696,Blacklist Regex: N/A
+1709537088696,Maximum Response Size: 6553500
+1709537088696,Maximum Request Size: 6553500
+1709537088696,Limit Maximum Image Pixels: true
+1709537088696,Prefer direct buffer: false
+1709537088696,Allowed Urls: [file://.*|http(s)?://.*]
+1709537088696,Custom python dependency for model allowed: false
+1709537088696,Enable metrics API: true
+1709537088696,Metrics mode: log
+1709537088696,Disable system metrics: true
+1709537088696,Workflow Store: /.sagemaker/ts/models
+1709537088696,Model config: N/A
+1709537088696,"2024-03-04T07:24:48,637 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin..."
+1709537088696,"2024-03-04T07:24:48,658 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: /opt/ml/model"
+1709537088696,"2024-03-04T07:24:48,661 [WARN ] main org.pytorch.serve.archive.model.ModelArchive - Model archive version is not defined. Please upgrade to torch-model-archiver 0.2.0 or higher"
+1709537088696,"2024-03-04T07:24:48,662 [WARN ] main org.pytorch.serve.archive.model.ModelArchive - Model archive createdOn is not defined. Please upgrade to torch-model-archiver 0.2.0 or higher"
+1709537088696,"2024-03-04T07:24:48,665 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model model loaded."
+1709537088947,"2024-03-04T07:24:48,677 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel."
+1709537088947,"2024-03-04T07:24:48,769 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://0.0.0.0:8080"
+1709537088947,"2024-03-04T07:24:48,769 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel."
+1709537089198,"2024-03-04T07:24:48,770 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082"
+1709537089449,Model server started.
+1709537089449,"2024-03-04T07:24:49,356 [INFO ] pool-2-thread-2 ACCESS_LOG - /169.254.178.2:45292 ""GET /ping HTTP/1.1"" 200 16"
+1709537090452,"2024-03-04T07:24:49,357 [INFO ] pool-2-thread-2 TS_METRICS - Requests2XX.Count:1.0|#Level:Host|#hostname:container-0.local,timestamp:1709537089"
+1709537090452,"2024-03-04T07:24:50,298 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=113"
+1709537090452,"2024-03-04T07:24:50,300 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000"
+1709537090452,"2024-03-04T07:24:50,371 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml."
+1709537090452,"2024-03-04T07:24:50,372 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - [PID]113"
+1709537090452,"2024-03-04T07:24:50,372 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Torch worker started."
+1709537090452,"2024-03-04T07:24:50,372 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Python runtime: 3.10.9"
+1709537090452,"2024-03-04T07:24:50,376 [INFO ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000"
+1709537090452,"2024-03-04T07:24:50,383 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Connection accepted: /home/model-server/tmp/.ts.sock.9000."
+1709537090452,"2024-03-04T07:24:50,386 [INFO ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req.cmd LOAD to backend at: 1709537090386"
+1709537091453,"2024-03-04T07:24:50,411 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - model_name: model, batchSize: 1"
+1709537091453,"2024-03-04T07:24:51,372 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Backend worker process died."
+1709537091453,"2024-03-04T07:24:51,373 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Traceback (most recent call last):"
+1709537091453,"2024-03-04T07:24:51,373 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py"", line 253, in <module>"
+1709537091453,"2024-03-04T07:24:51,373 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     worker.run_server()"
+1709537091453,"2024-03-04T07:24:51,374 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py"", line 221, in run_server"
+1709537091453,"2024-03-04T07:24:51,374 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)"
+1709537091453,"2024-03-04T07:24:51,374 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py"", line 184, in handle_connection"
+1709537091453,"2024-03-04T07:24:51,375 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)"
+1709537091453,"2024-03-04T07:24:51,375 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/ts/model_service_worker.py"", line 131, in load_model"
+1709537091453,"2024-03-04T07:24:51,375 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     service = model_loader.load("
+1709537091453,"2024-03-04T07:24:51,373 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED"
+1709537091453,"2024-03-04T07:24:51,375 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/ts/model_loader.py"", line 135, in load"
+1709537091453,"2024-03-04T07:24:51,376 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)"
+1709537091453,"2024-03-04T07:24:51,376 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/sagemaker_pytorch_serving_container/handler_service.py"", line 51, in initialize"
+1709537091453,"2024-03-04T07:24:51,376 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     super().initialize(context)"
+1709537091453,"2024-03-04T07:24:51,377 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/sagemaker_inference/default_handler_service.py"", line 66, in initialize"
+1709537091453,"2024-03-04T07:24:51,377 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     self._service.validate_and_initialize(model_dir=model_dir, context=context)"
+1709537091453,"2024-03-04T07:24:51,377 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/sagemaker_inference/transformer.py"", line 179, in validate_and_initialize"
+1709537091453,"2024-03-04T07:24:51,377 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     self._validate_user_module_and_set_functions()"
+1709537091453,"2024-03-04T07:24:51,378 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/site-packages/sagemaker_inference/transformer.py"", line 206, in _validate_user_module_and_set_functions"
+1709537091453,"2024-03-04T07:24:51,378 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     user_module = importlib.import_module(user_module_name)"
+1709537091453,"2024-03-04T07:24:51,378 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""/opt/conda/lib/python3.10/importlib/__init__.py"", line 126, in import_module"
+1709537091453,"2024-03-04T07:24:51,378 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)"
+1709537091453,"2024-03-04T07:24:51,378 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.BatchAggregator - Load model failed: model, error: Worker died."
+1709537091453,"2024-03-04T07:24:51,379 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""<frozen importlib._bootstrap>"", line 1050, in _gcd_import"
+1709537091453,"2024-03-04T07:24:51,379 [INFO ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1709537091379"
+1709537091453,"2024-03-04T07:24:51,379 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""<frozen importlib._bootstrap>"", line 1027, in _find_and_load"
+1709537091453,"2024-03-04T07:24:51,380 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""<frozen importlib._bootstrap>"", line 1006, in _find_and_load_unlocked"
+1709537091453,"2024-03-04T07:24:51,380 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stderr"
+1709537091453,"2024-03-04T07:24:51,380 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stdout"
+1709537091453,"2024-03-04T07:24:51,380 [INFO ] W-9000-model_1.0-stdout MODEL_LOG -   File ""<frozen importlib._bootstrap>"", line 688, in _load_unlocked"
+1709537091453,"2024-03-04T07:24:51,381 [INFO ] W-9000-model_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-model_1.0-stdout"
+1709537093707,"2024-03-04T07:24:51,381 [INFO ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds."
+1709537093707,"2024-03-04T07:24:53,681 [INFO ] W-9000-model_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-model_1.0-stderr"
+1709537093707,"2024-03-04T07:24:53,682 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stderr"
+1709537093707,"2024-03-04T07:24:53,682 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stdout"
+1709537093707,"2024-03-04T07:24:53,693 [INFO ] W-9000-model_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-model_1.0-stderr"
+1709537093707,"2024-03-04T07:24:53,693 [INFO ] W-9000-model_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-model_1.0-stdout"
+1709537093707,"2024-03-04T07:24:53,682 [ERROR] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error"
+1709537093707,org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+1709537093707,#011at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:173) ~[model-server.jar:?]
+1709537093707,#011at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:339) ~[model-server.jar:?]
+1709537093707,#011at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:183) [model-server.jar:?]
+1709537093707,#011at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+1709537093707,#011at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+1709537093707,#011at java.lang.Thread.run(Thread.java:840) [?:?]
+1709537093707,"2024-03-04T07:24:53,697 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again"
+1709537093707,"2024-03-04T07:24:53,697 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stderr"
+1709537093707,"2024-03-04T07:24:53,698 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stdout"
+1709537094459,"2024-03-04T07:24:53,698 [INFO ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds."
+1709537094459,"2024-03-04T07:24:54,259 [INFO ] W-9000-model_1.0 ACCESS_LOG - /169.254.178.2:45292 ""GET /ping HTTP/1.1"" 200 0"
+1709537096214,"2024-03-04T07:24:54,260 [INFO ] W-9000-model_1.0 TS_METRICS - Requests2XX.Count:1.0|#Level:Host|#hostname:container-0.local,timestamp:1709537094"
+1709537096214,"2024-03-04T07:24:56,167 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - s_name_part0=/home/model-server/tmp/.ts.sock, s_name_part1=9000, pid=174"
+1709537096473,"2024-03-04T07:24:56,174 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Listening on port: /home/model-server/tmp/.ts.sock.9000"
+1709537096473,"2024-03-04T07:24:56,242 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Successfully loaded /opt/conda/lib/python3.10/site-packages/ts/configs/metrics.yaml."
+1709537096473,"2024-03-04T07:24:56,243 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - [PID]174"
+1709537096473,"2024-03-04T07:24:56,243 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Torch worker started."
+1709537096473,"2024-03-04T07:24:56,244 [INFO ] W-9000-model_1.0-stdout MODEL_LOG - Python runtime: 3.10.9"
+1709537096473,"2024-03-04T07:24:56,245 [INFO ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /home/model-server/tmp/.ts.sock.9000"
+1709537096473,"2024-03-04T07:24:56,247 [INFO ] epollEventLoopGroup-5-1 org.pytorch.serve.wlm.WorkerThread - 9000 Worker disconnected. WORKER_STARTED"
+1709537096473,"2024-03-04T07:24:56,247 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again"
+1709537096473,"2024-03-04T07:24:56,247 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stderr"
+1709537096473,"2024-03-04T07:24:56,248 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stdout"
+1709537096473,"2024-03-04T07:24:56,248 [INFO ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 2 seconds."
+1709537096473,"2024-03-04T07:24:56,271 [ERROR] epollEventLoopGroup-5-2 org.pytorch.serve.wlm.WorkerThread - Unknown exception"
+1709537099472,io.netty.channel.unix.Errors$NativeIoException: readAddress(..) failed: Connection reset by peer
+1709537099472,"2024-03-04T07:24:59,257 [INFO ] pool-2-thread-2 ACCESS_LOG - /169.254.178.2:45292 ""GET /ping HTTP/1.1"" 200 0"
+1709537099472,"2024-03-04T07:24:59,257 [INFO ] pool-2-thread-2 TS_METRICS - Requests2XX.Count:1.0|#Level:Host|#hostname:container-0.local,timestamp:1709537099"
+1709537099472,"2024-03-04T07:24:59,467 [INFO ] W-9000-model_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-model_1.0-stderr"
+1709537099472,"2024-03-04T07:24:59,467 [INFO ] W-9000-model_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-model_1.0-stdout"
+1709537099472,"2024-03-04T07:24:59,469 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stderr"
+1709537099472,"2024-03-04T07:24:59,469 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stdout"
+1709537099472,"2024-03-04T07:24:59,469 [ERROR] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error"
+1709537099472,org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+1709537099472,#011at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:173) ~[model-server.jar:?]
+1709537099472,#011at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:339) ~[model-server.jar:?]
+1709537099472,#011at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:183) [model-server.jar:?]
+1709537099472,#011at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+1709537099472,#011at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+1709537099472,#011at java.lang.Thread.run(Thread.java:840) [?:?]
+1709537099472,"2024-03-04T07:24:59,470 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again"
+1709537099472,"2024-03-04T07:24:59,470 [WARN ] W-9000-model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-model_1.0-stderr"
